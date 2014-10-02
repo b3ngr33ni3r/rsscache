@@ -1,0 +1,21 @@
+{
+  "name": "rsscache",
+  "version": "0.0.0",
+  "description": "configurable lru caching for rss feed data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lru",
+    "rss"
+  ],
+  "author": "Ben Greenier",
+  "license": "MIT",
+  "dependencies": {
+    "feedparser": "^0.19.2",
+    "lru-cache": "^2.5.0",
+    "merge": "^1.2.0",
+    "request": "^2.44.0"
+  }
+}
