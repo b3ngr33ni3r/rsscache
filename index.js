@@ -1,6 +1,7 @@
-var merge = require('merge'),
+var util = require('util'),
+    merge = require('merge'),
     request = require('request'),
-    Feedparser = require('feedparser'),
+    FeedParser = require('feedparser'),
     lru = require('lru-cache'),
     EventEmitter = require('events').EventEmitter;
 
@@ -32,7 +33,7 @@ module.exports = (function () {
         //add a feed to be tracked and fire off an update
         self.addFeed = function (uri) {
             var fResult = _feeds.push(uri);
-            self.update(uri);
+            self.updateFeed(uri);
             return fResult;
         };
 
